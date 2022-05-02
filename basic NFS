@@ -1,0 +1,17 @@
+nfs guide
+BASIC NFS:
+RUN THIS AS ROOT!
+
+showmount -e <IP ADDRESS>
+
+mkdir /tmp/nfs (you can name this file whatever)
+
+mount  -o nolock -t nfs <IP ADDRESS>:/ (this will be the file you can access) /tmp/nfs (this will be whatever you called the file ) 
+
+ssh-keygen (Dont enter a password)
+
+cat /root/.ssh/id_rsa.pub >> tmp/nfs/root/.ssh/authorized_keys 
+
+then just ssh into the machine.
+
+to unmount the drive do  umount /tmp/nfs (or whatever you called it ) 

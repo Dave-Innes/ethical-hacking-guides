@@ -1,0 +1,13 @@
+metasploit
+
+create workspace
+
+workspace -a (workspace name)
+
+db_import filename
+
+search Vulns
+
+set options
+
+run
